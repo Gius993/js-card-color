@@ -1,0 +1,15 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background-color: gray;
+}
+#card{
+	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+	background-color: white;
+}
