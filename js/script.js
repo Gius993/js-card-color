@@ -5,7 +5,7 @@ const paragraphVariable = document.querySelector('#paragpaph-color');
 const paddingXVariable = document.querySelector('#padding_x');
 const paddingYVariable = document.querySelector('#padding_y');
 const borderVariable = document.querySelector('#radius-border');
-const cardVariable = document.querySelector('#card');
+
 
 
 //Event list
@@ -35,4 +35,12 @@ paddingYVariable.addEventListener('input', (e)=>{
 	   paddingDivY.style.paddingTop = `${e.target.value}px`;
 	   paddingDivY.style.paddingBottom = `${e.target.value}px`;
    
+   });
+   borderVariable.addEventListener('input', (e)=>{
+	const cardVariable = document.querySelector('#card');
+	const immagine = document.querySelector('#card img');
+	cardVariable.style.borderRadius = `${e.target.value}px`;
+	immagine.style.borderTopLeftRadius = `${e.target.value}px`;
+	immagine.style.borderTopRightRadius = `${e.target.value}px`;
+
    });
